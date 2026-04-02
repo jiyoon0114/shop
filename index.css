@@ -58,6 +58,10 @@ img {
   padding: 20px 0;
 }
 
+.sidevar-btn {
+  display: none;
+}
+
 .nav-ul {
   display: flex;
   gap: 30px;
@@ -66,6 +70,7 @@ img {
 .logo {
   font-size: 20px;
   font-weight: 600;
+  color: #e4e4e4;
 }
 
 .Login {
@@ -75,12 +80,17 @@ img {
 
 .login-a {
   display: inline-block;
-  border: 1px solid #585858;;
+  border: 1px solid #6a6a6a;
   padding: 4px 30px;
 }
 
-.nav-ul > li > a:hover {
+.nav-ul > li > a {
   color: #e4e4e4;
+}
+
+.nav-ul > li > a:hover {
+  background-color: #e4e4e46c;
+  color: #141414;
   transition: 0.4s;
 }
 
@@ -117,12 +127,17 @@ img {
 
 .buy-button {
   display: inline-block;
-  border: 1px solid #141414;
-  padding: 4px 20px;
-  text-align: center;
+  padding: 10px 30px;
   align-self: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #f0f0f0;
   background-color: #141414;
+}
+
+.buy-button:hover {
+  background-color: #14141462;
 }
 
 /* 2번째 페이지 */
@@ -334,5 +349,24 @@ header > ul > li > a:hover {
   }
   .since-sub {
     font-size: larger;
+  }
+}
+
+@media (max-width: 450px) {
+  .sidevar-btn {
+    display: inline;
+    font-weight: 800;
+    font-size: 40px;
+    position: fixed;
+    border: none;
+    background: none;
+    color: #7b7b7b;
+    top: 20px;
+    left: 20px;
+    z-index: 99999;
+  }
+
+  .nav {
+    display: none;
   }
 }
