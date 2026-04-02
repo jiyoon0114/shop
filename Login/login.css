@@ -2,7 +2,6 @@
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
   position: relative;
   overflow: hidden;
 }
@@ -47,18 +46,20 @@ a {text-decoration: none;}
 .login-picture-box {
   display: flex;
   border-radius: 100px;
-  width: 1000px;
-  height: 800px;
+  width: 60%;
+  height: 90%;
   gap: 10px;
   padding: 40px;
   box-shadow: 
     rgba(0, 0, 0, 0.3) 0px 19px 38px, 
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  background: rgba(255, 255, 255, 0.149);
   transition: 0.3s;
 }
 
 
 .right-picture {
+  backdrop-filter: blur(20px);
   flex: 1;
   border-radius: 100px;
   box-shadow: 
@@ -67,11 +68,21 @@ a {text-decoration: none;}
   transition: 0.3s;
   display: flex;
   flex-direction: column;
-  /* background-image: url("img/login-right-img.jpg"); */
+  /* background-image: url("img/login-right-img.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover; */
   border-radius: 100px;
-  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+}
+
+.login-sub {
+  border-radius: 100px;
+  font-size: 40px;
+  color: #3d3d3d;
   height: 100%;
   width: 100%;
   display: flex;
@@ -79,23 +90,13 @@ a {text-decoration: none;}
   align-items: center;
 }
 
-.login-sub {
-  backdrop-filter: blur(20px);
-  border-radius: 100px;
-  font-size: 80px;
-  color: #3d3d3d;
-  height: 100%;
-  width: 100%;
-  padding: 50% 30px;
-}
-
 .login-box {
   transition: 0.3s;
-  flex: 0.8;
+  flex: 1;
   display: flex;
   flex-direction: column;
   border-radius: 100px;
-  gap: 12%;
+  gap: 4%;
   padding: 30px;
 
   box-shadow: 
@@ -129,7 +130,7 @@ a {text-decoration: none;}
 form {
   display: flex;
   flex-direction: column;
-  gap:10%;
+  gap:3%;
 }
 
 .label-id {
@@ -140,9 +141,9 @@ form {
 
 .input-design {
   width: 100%;
-  height: 40px;
+  height: 20%;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.685);
+  background: rgba(255, 255, 255, 0.248);
   box-shadow: 
     0 8px 32px rgba(0, 0, 0, 0.1),
     inset 0 1px 0 rgba(255, 255, 255, 0.5),
@@ -150,7 +151,7 @@ form {
     inset 0 0 10px 5px rgba(255, 255, 255, 0.5);
   
   border-radius: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   outline: none;
 }
 
@@ -165,15 +166,22 @@ form {
     inset 0 -1px 0 rgba(255, 255, 255, 0.1),
     inset 0 0 10px 5px rgba(114, 114, 114, 0.5);
   margin-bottom: 10px;
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 100px;
 }
 
 .btn:hover {
   background: rgba(170, 170, 170, 0.24);
   padding: 30px;
   transition: 0.3s;
+}
+
+@media (max-width:1060px) {
+  .login-picture-box {
+    width: 70%;
+  }
 }
 
 @media (max-width:850px) {
@@ -185,11 +193,12 @@ form {
     justify-content: center;
     align-items: center;
     box-shadow: none;
+    padding: 0px;
   }
 
   .login-box {
     flex: none;
-    width: 450px;
-    height: 700px;
+    width: 99%;
+    height: 99%;
   }
 }
