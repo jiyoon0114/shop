@@ -46,14 +46,13 @@ a {text-decoration: none;}
 .login-picture-box {
   display: flex;
   border-radius: 100px;
-  width: 60%;
+  width: 50%;
   height: 90%;
   gap: 10px;
   padding: 40px;
   box-shadow: 
     rgba(0, 0, 0, 0.3) 0px 19px 38px, 
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  background: rgba(255, 255, 255, 0.149);
   transition: 0.3s;
 }
 
@@ -160,7 +159,7 @@ form {
   font-size: 20px;
   width: 100%;
   height: 50px;
-  background: rgba(3, 3, 3, 0.24);
+  background: rgba(3, 3, 3, 0.523);
   box-shadow: 
     0 8px 32px rgba(3, 3, 3, 0.1),
     inset 0 -1px 0 rgba(255, 255, 255, 0.1),
@@ -174,17 +173,42 @@ form {
 
 .btn:hover {
   background: rgba(170, 170, 170, 0.24);
-  padding: 30px;
+  transform: scale(1.05);
   transition: 0.3s;
 }
 
-@media (max-width:1060px) {
+@media (max-width:1300px) {
   .login-picture-box {
-    width: 70%;
+    width: 60%;
   }
 }
 
-@media (max-width:850px) {
+@media (max-width:900px) {
+  .login-picture-box {
+    width: 80%;
+  }
+}
+
+@media (max-width:700px) {
+  .right-picture {
+    display: none;
+  }
+
+  .login-picture-box{
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+    padding: 0px;
+  }
+
+  .login-box {
+    flex: none;
+    width: 75%;
+    height: 99%;
+  }
+}
+
+@media (max-width:480px) {
   .right-picture {
     display: none;
   }
