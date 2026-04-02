@@ -1,0 +1,338 @@
+.playfair-display-sc-bold {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.playfair-display-sc-regular {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.roboto-mono {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  word-spacing: 2px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #141414;
+}
+
+a {
+  text-decoration: none;
+  z-index: 20;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+/* 첫번째 페이지 */
+.first-page {
+  background: radial-gradient(#e4e4e4,#141414);
+  width: 100%;
+  padding: 0 7%;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.nav-ul > li {
+  color: #585858;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.nav-ul {
+  display: flex;
+  gap: 30px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.Login {
+  border: 1px solid #141414;
+  padding: 4px 10px;
+}
+
+.login-a {
+  display: inline-block;
+  border: 1px solid #585858;;
+  padding: 4px 30px;
+}
+
+.nav-ul > li > a:hover {
+  color: #e4e4e4;
+  transition: 0.4s;
+}
+
+.nav > .login-a:hover {
+  color: #e4e4e4;
+  border-color: #e4e4e4;
+  transition: 0.4s;
+}
+
+.first-main {
+  display: flex;
+  gap: 10%;
+}
+
+.half {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.first-img {
+  width: 100%;
+  border-radius: 10px 60px 30px;
+}
+
+.title {
+  font-size: 5vw;
+}
+
+.product-description {
+  font-size: 1.3vw;
+}
+
+.buy-button {
+  display: inline-block;
+  border: 1px solid #141414;
+  padding: 4px 20px;
+  text-align: center;
+  align-self: flex-start;
+  color: #f0f0f0;
+  background-color: #141414;
+}
+
+/* 2번째 페이지 */
+
+.second-page {
+  background: linear-gradient(#585858, #e4e4e4);
+  width: 100%;
+  padding: 7%;
+  display: flex;
+  flex-direction: column;
+  gap: 20vw;
+  box-shadow: rgba(20, 20, 20, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.collection-sub {
+  text-align: center;
+  font-size: 2vw;
+}
+
+.collection-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8vw;
+}
+
+.collection-card-box {
+  display: flex;
+  gap: 5%;
+}
+
+.collection-card {
+  border-radius: 10%;
+  width: 25vw;
+  height: 33vw;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.collection-img-box {
+  width: 100%;
+  height: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10%;
+}
+
+.best-since {
+  display: flex;
+  gap: 10%;
+}
+
+.since-img {
+  border-radius: 10px 60px 30px;
+}
+
+.since-sub {
+  font-size: 2vw;
+  text-align: center;
+}
+
+/* 3번째 페이지 */
+.third-page {
+  padding: 7%;
+  width: 100%;
+  background-color: #e4e4e4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6vw;
+}
+
+header > ul {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 5vw;
+}
+
+header > ul > li > a:hover {
+  background-color: #94939398;
+  padding: 0 10px;
+}
+
+.product-box {
+  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10%;
+}
+
+.product-card > img {
+  border-radius: 10%;
+}
+
+.product-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transition: 0.3s;
+}
+
+@media (max-width: 950px) {
+  .nav {
+  justify-content: space-around;
+  }
+
+  .company {
+    display: none;
+  }
+
+  .nav-ul  > a, .login-a {
+    color: #b1b1b1;
+  }
+
+  .first-page {
+    padding: 0;
+    gap: 10px;
+  }
+  .first-img {
+    display: none;
+  }
+  
+  .first-main {
+    height: 65vh;
+    background-image: url("./img/MainPicture.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    flex-direction: column-reverse;
+    padding-bottom: 15px;
+    padding-left: 10px;
+  }
+
+  .product-title {
+    width: 50%;
+    color: #f0f0f0;
+  }
+
+  .product-description {
+    width: 60%;
+    font-size: 2vw;
+    color: #f0f0f0;
+  }
+
+  /* second-page */
+  .collection-page {
+    gap: 70px;
+  }
+
+  .collection-sub {
+    font-size: 3vw;
+  }
+
+  .collection-card-box {
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  .best-since {
+    flex-direction: column;
+  }
+
+  .half > img {
+    width: 60%;
+  }
+
+  .collection-card {
+  width: 60vw;
+  height: 85vw;
+}
+
+  .best-since > .half {
+    align-items: center;
+  }
+
+  .since-sub {
+    font-size: larger;
+  }
+
+  /* 3번째 페이지 */
+
+  .product-box {
+    /* 부모영역의 100%를 못쓰면 그리드가 안될떄 많음 */
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(140px,1fr));
+  }
+
+}
+
+@media (max-width: 600px) {
+  .product-description {
+    font-size: 3vw;
+    color: #f0f0f0;
+  }
+  .collection-sub {
+    font-size: 4vw;
+  }
+  .login-a {
+    padding: 4px 10px;
+  }
+  .since-sub {
+    font-size: larger;
+  }
+}
