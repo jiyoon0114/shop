@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="sign-up.css">
+  <title>Sign in</title>
+</head>
+<body>
+  <div class="container">
+    <div class="box glass-card">
+      <div class="login-box glass-card">
+        <span class="title playfair-display-sc-regular glass-card">Sign in</span>
+        <span class="login-sub playfair-display-sc-regular">Make Your account</span>
+        <a href="./login.html" class="glass-card  btn btn-signup playfair-display-sc-regular">Log in</a>
+      </div>
+      <div class="right glass-card">
+        <form action="" method="post">
+          <div class="user-informatin-input">
+            <label for="name" class="label-id playfair-display-sc-regular">Name</label>
+            <input type="text" class=" glass-card input-design" name="name" id="name" required>
+            <label for="id" class="label-id playfair-display-sc-regular">Email</label>
+            <input type="text" class=" glass-card input-design" name="id" id="id" required>
+            <label for="password" class="label-id playfair-display-sc-regular">password</label>
+            <input type="password" class="glass-card input-design" name="password" id="password">
+            <label for="phone-number" class="label-id playfair-display-sc-regular">Phone number</label>
+            <input type="tel" class="glass-card input-design" name="phone-number" id="phone-number">
+            <label for="birth" class="label-id playfair-display-sc-regular">Date of Birth</label>
+            <input type="date" class="glass-card input-design" name="birth" id="birth" max="2026-04-03">
+            <label for="nickname" class="label-id playfair-display-sc-regular">Nick Name</label>
+            <input type="text" class=" glass-card input-design" name="nickname" id="nickname" >
+          </div>
+          <div>
+            <button type="submit" class="glass-card btn playfair-display-sc-regular">Make it</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
