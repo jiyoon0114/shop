@@ -266,7 +266,7 @@ header > ul > li > a:hover {
   }
   
   .first-main {
-    height: 65vh;
+    height: 65dvh;
     background-image: url("./img/MainPicture.jpg");
     background-repeat: no-repeat;
     background-size: cover;
