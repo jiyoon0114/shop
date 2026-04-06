@@ -1,0 +1,19 @@
+.slider {
+  display: flex;
+  align-items: center;
+}
+
+.viewport {
+  width: 300px;       /* 보여줄 영역 */
+  overflow: hidden;   /* 넘치는 거 숨김 */
+}
+
+.track {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.track img {
+  width: 300px;
+  flex-shrink: 0;
+}

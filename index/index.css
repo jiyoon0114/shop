@@ -267,7 +267,7 @@ header > ul > li > a:hover {
   
   .first-main {
     height: 600px;
-    background-image: url("./img/MainPicture.jpg");
+    background-image: url("../img/MainPicture.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
