@@ -1,9 +1,7 @@
 .glass-card {
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-radius: 20px;
   position: relative;
   overflow: visible;
+  border-radius: 100px;
 }
 
 .playfair-display-sc-bold {
@@ -33,7 +31,7 @@ a {text-decoration: none;}
 .container {
   width: 100dvw;
   height: 100dvh;
-  background-image: url("img/login-background.jpg");
+  background-image: url("../img/background/login-background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -43,11 +41,11 @@ a {text-decoration: none;}
   padding: 20px;
 }
 
-.login-picture-box {
-  display: flex;
-  border-radius: 100px;
-  width: 50%;
+.box {
+  backdrop-filter: blur(5px);
   height: 800px;
+  display: flex;
+  width: 50%;
   gap: 10px;
   padding: 40px;
   box-shadow: 
@@ -57,10 +55,8 @@ a {text-decoration: none;}
 }
 
 
-.right-picture {
-  backdrop-filter: blur(20px);
+.right {
   flex: 1;
-  border-radius: 100px;
   box-shadow: 
     rgba(0, 0, 0, 0.3) 0px 19px 38px, 
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -71,32 +67,30 @@ a {text-decoration: none;}
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; */
-  border-radius: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3%;
+  padding: 0 30px;
 }
 
 .login-sub {
-  border-radius: 100px;
   font-size: 40px;
   color: #3d3d3d;
-  height: 100%;
+  height: 40%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  align-items: top;
 }
 
-.login-box {
+.signin-box {
   transition: 0.3s;
   flex: 1;
   display: flex;
   flex-direction: column;
-  border-radius: 100px;
-  gap: 4%;
-  padding: 50px;
+  gap: 3px;
+  padding: 30px;
 
   box-shadow: 
     rgba(0, 0, 0, 0.3) 0px 19px 38px, 
@@ -109,7 +103,6 @@ a {text-decoration: none;}
   font-weight: 800;
   text-align: center;
   color: #d6d6d6;
-  border-radius: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -126,10 +119,19 @@ a {text-decoration: none;}
   background-color: #25252570;
 }
 
+
+.user-informatin-input {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: ceneter;
+  justify-content: center;
+}
+
 form {
   display: flex;
   flex-direction: column;
-  gap:3%;
+  gap: 35px;
 }
 
 .label-id {
@@ -138,9 +140,14 @@ form {
   color: #f8f8f8;
 }
 
+
+fieldset > span.title {
+  display: none;
+}
+
 .input-design {
   width: 100%;
-  height: 20%;
+  height: 30px;
   padding: 20px;
   background: rgba(255, 255, 255, 0.248);
   box-shadow: 
@@ -168,7 +175,6 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 100px;
 }
 
 .btn:hover {
@@ -178,61 +184,65 @@ form {
 }
 
 @media (max-width:1300px) {
-  .login-picture-box {
+  .box {
     width: 60%;
   }
 }
 
 @media (max-width:900px) {
-  .login-picture-box {
+  .box {
     width: 80%;
   }
 }
 
 @media (max-width:700px) {
-  .right-picture {
+  .signin-box {
     display: none;
   }
 
-  .login-picture-box{
+  .box{
+    backdrop-filter: none;
     justify-content: center;
     align-items: center;
     box-shadow: none;
     padding: 0px;
   }
 
-  .login-box {
+  .right {
+    backdrop-filter: blur(5px);
     flex: none;
     width: 75%;
     height: 99%;
   }
+
+  fieldset > span.title {
+    display: flex;
+    width: 90%;
+    height: 30%;
+  }
 }
 
 @media (max-width:480px) {
-  .right-picture {
+  .signin-box{
     display: none;
   }
 
-  .login-picture-box{
-    justify-content: center;
-    align-items: center;
-    box-shadow: none;
-    padding: 0px;
+  .box{
+    backdrop-filter: none;
   }
 
-  .login-box {
+  .right {
     flex: none;
     width: 99%;
     height: 99%;
   }
 }
 
-@media (max-height : 810px) {
-  .login-picture-box {
+@media (max-height : 800px) {
+  .box {
     height: 640px;
   }
-  .title {
-    width: 100%;
-    height: 40%;
+  .input-design {
+    padding: 5px;
   }
 }

@@ -20,7 +20,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #141414;
+  color: #252525;
 }
 
 a {
@@ -38,7 +38,7 @@ img {
 
 /* 첫번째 페이지 */
 .first-page {
-  background: radial-gradient(#e4e4e4,#141414);
+  background: radial-gradient(#e4e4e4,#252525);
   width: 100%;
   padding: 0 7%;
   padding-bottom: 80px;
@@ -55,7 +55,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .nav-ul {
@@ -70,7 +70,7 @@ img {
 }
 
 .Login {
-  border: 1px solid #141414;
+  border: 1px solid #252525;
   padding: 4px 10px;
 }
 
@@ -129,7 +129,7 @@ img {
   justify-content: center;
   align-items: center;
   color: #f0f0f0;
-  background-color: #141414;
+  background-color: #252525;
 }
 
 .buy-button:hover {
@@ -139,7 +139,7 @@ img {
 /* 2번째 페이지 */
 
 .second-page {
-  background: linear-gradient(#585858, #e4e4e4);
+  background: linear-gradient(#454545, #e4e4e4);
   width: 100%;
   padding: 7%;
   display: flex;
@@ -206,6 +206,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 6vw;
 }
 
@@ -267,7 +268,7 @@ header > ul > li > a:hover {
   
   .first-main {
     height: 600px;
-    background-image: url("../img/MainPicture.jpg");
+    background-image: url("../img/background/MainPicture.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;

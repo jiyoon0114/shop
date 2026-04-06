@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../index/index.css">
+  <link rel="stylesheet" href="css/index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-  <script src="index/index.js" defer></script>
+  <script src="js/index.js" defer></script>
   <title>SHOP</title>
 </head>
 <body>
@@ -26,7 +26,7 @@
           <li><a href="">cart</a></li>
           <li><a href="">my</a></li>
         </ul>
-        <a href="./Login-sign/login.html" class="login-a logo">LOGIN</a>
+        <a href="pages/login.html" class="login-a logo">LOGIN</a>
       </div>
       <div class="first-main">
         <div class="half">
@@ -39,7 +39,7 @@
           <a href="" class="buy-button">Buy Now</a>
         </div>
         <div class="half">
-          <img src="img/MainPicture.jpg" alt="" class="first-img">
+          <img src="img/background/MainPicture.jpg" alt="" class="first-img">
         </div>
       </div>
     </div>
@@ -49,23 +49,12 @@
         <p class="title playfair-display-sc-bold">New Collection</p>
         <p class="collection-sub roboto-mono">You must allow me to tell you how ardently I admire and love you.</p>
         <div class="collection-card-box">
-          <div class="collection-card">
-            <a class="collection-img-box" style="background-image: url('img/collection1.jfif');">
-            </a>
-          </div>
-          <div class="collection-card">
-            <a class="collection-img-box" style="background-image: url('img/collection2.jfif');">
-            </a>
-          </div>
-          <div class="collection-card">
-            <a class="collection-img-box" style="background-image: url('img/collection3.jfif');">
-            </a>
-          </div>
+          <!-- index.js 참조 -->
         </div>
       </div>
       <div class="best-since">
         <div class="half">
-          <img src="img/since.jfif" alt="" class="since-img">
+          <img src="img/main/since.jfif" alt="" class="since-img">
         </div>
         <div class="half">
           <span class="title playfair-display-sc-bold">Best Fashion <br>Since 2014</span>
@@ -87,7 +76,9 @@
         </ul>
       </header>
       <div class="product-box">
+        <!-- index.js 참조하기 -->
       </div>
+      <a class="go-product-page roboto-mono" href="./pages/entire-product.html">View More</a>
     </div>
   </div>
 </body>
