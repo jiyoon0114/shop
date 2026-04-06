@@ -1,0 +1,142 @@
+
+.playfair-display-sc-bold {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.playfair-display-sc-regular {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-mono {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  word-spacing: 2px;
+}
+
+.glass-card {
+  position: relative;
+  overflow: visible;
+  border-radius: 100px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #252525;
+}
+
+a {
+  text-decoration: none;
+  z-index: 20;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 10%;
+}
+
+.nav-ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1.5;
+  gap: 10%;
+}
+
+.nav-ul > li {
+  color: #585858;
+}
+
+.logo {
+  font-size: 16px;
+  font-weight: 600;
+  color: #e4e4e4;
+}
+
+.login-a {
+  display: inline-block;
+  border: 1px solid #6a6a6a;
+  padding: 4px 30px;
+}
+
+.nav-ul > li > a {
+  color: #e4e4e4;
+}
+
+.nav-ul > li > a:hover {
+  background-color: #e4e4e46c;
+  color: #141414;
+  transition: 0.4s;
+}
+
+.nav > .login-a:hover {
+  color: #e4e4e4;
+  border-color: #e4e4e4;
+  transition: 0.4s;
+}
+
+.product-box {
+  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10%;
+}
+
+.product-card > img {
+  border-radius: 10%;
+}
+
+.product-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transition: 0.3s;
+}
+
+@media (max-width: 950px) {
+  .nav {
+    justify-content: space-around;
+  }
+
+  .company {
+    display: none;
+  }
+
+  .nav-ul > a,
+  .login-a {
+    color: #b1b1b1;
+  }
+
+  .product-box {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .login-a {
+    padding: 4px 10px;
+  }
+}

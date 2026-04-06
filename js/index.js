@@ -35,7 +35,7 @@ collection_main.forEach(function(collection){
 
 //main 마지막페이지 그리드
 
-const productPictureAdress = 'img/products/'
+const productPictureAdress = 'img/products/';
 
 const product_clothes = [
   { img: `${productPictureAdress}product1.jfif`, name: "상품명1", price: "40,000원", productSold: 1},

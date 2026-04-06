@@ -1,99 +1,11 @@
-.playfair-display-sc-bold {
-  font-family: "Playfair Display SC", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-.playfair-display-sc-regular {
-  font-family: "Playfair Display SC", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-.roboto-mono {
-  font-family: "Roboto Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  word-spacing: 2px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: #252525;
-}
-
-a {
-  text-decoration: none;
-  z-index: 20;
-}
-
-ul {
-  list-style: none;
-}
-
-img {
-  width: 100%;
-}
-
-/* 첫번째 페이지 */
 .first-page {
-  background: radial-gradient(#e4e4e4,#252525);
+  background: radial-gradient(#e4e4e4, #252525);
   width: 100%;
   padding: 0 7%;
   padding-bottom: 80px;
   display: flex;
   flex-direction: column;
   gap: 80px;
-}
-
-.nav-ul > li {
-  color: #585858;
-}
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0;
-}
-
-.nav-ul {
-  display: flex;
-  gap: 30px;
-}
-
-.logo {
-  font-size: 20px;
-  font-weight: 600;
-  color: #e4e4e4;
-}
-
-.Login {
-  border: 1px solid #252525;
-  padding: 4px 10px;
-}
-
-.login-a {
-  display: inline-block;
-  border: 1px solid #6a6a6a;
-  padding: 4px 30px;
-}
-
-.nav-ul > li > a {
-  color: #e4e4e4;
-}
-
-.nav-ul > li > a:hover {
-  background-color: #e4e4e46c;
-  color: #141414;
-  transition: 0.4s;
-}
-
-.nav > .login-a:hover {
-  color: #e4e4e4;
-  border-color: #e4e4e4;
-  transition: 0.4s;
 }
 
 .first-main {
@@ -135,8 +47,6 @@ img {
 .buy-button:hover {
   background-color: #14141462;
 }
-
-/* 2번째 페이지 */
 
 .second-page {
   background: linear-gradient(#454545, #e4e4e4);
@@ -198,7 +108,6 @@ img {
   text-align: center;
 }
 
-/* 3번째 페이지 */
 .third-page {
   padding: 7%;
   width: 100%;
@@ -222,50 +131,16 @@ header > ul > li > a:hover {
   padding: 0 10px;
 }
 
-.product-box {
-  gap: 30px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.product-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  border-radius: 10%;
-}
-
-.product-card > img {
-  border-radius: 10%;
-}
-
-.product-card:hover {
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  transition: 0.3s;
-}
-
 @media (max-width: 950px) {
-  .nav {
-  justify-content: space-around;
-  }
-
-  .company {
-    display: none;
-  }
-
-  .nav-ul  > a, .login-a {
-    color: #b1b1b1;
-  }
-
   .first-page {
     padding: 0;
     gap: 10px;
   }
+
   .first-img {
     display: none;
   }
-  
+
   .first-main {
     height: 600px;
     background-image: url("../img/background/MainPicture.jpg");
@@ -288,7 +163,6 @@ header > ul > li > a:hover {
     color: #f0f0f0;
   }
 
-  /* second-page */
   .collection-page {
     gap: 70px;
   }
@@ -311,9 +185,9 @@ header > ul > li > a:hover {
   }
 
   .collection-card {
-  width: 60vw;
-  height: 85vw;
-}
+    width: 60vw;
+    height: 85vw;
+  }
 
   .best-since > .half {
     align-items: center;
@@ -322,15 +196,6 @@ header > ul > li > a:hover {
   .since-sub {
     font-size: larger;
   }
-
-  /* 3번째 페이지 */
-
-  .product-box {
-    /* 부모영역의 100%를 못쓰면 그리드가 안될떄 많음 */
-    width: 100%;
-    grid-template-columns: repeat(auto-fill, minmax(140px,1fr));
-  }
-
 }
 
 @media (max-width: 600px) {
@@ -338,28 +203,24 @@ header > ul > li > a:hover {
     font-size: 3vw;
     color: #f0f0f0;
   }
+
   .collection-sub {
     font-size: 4vw;
   }
-  .login-a {
-    padding: 4px 10px;
-  }
+
   .since-sub {
     font-size: larger;
   }
 }
 
-@media (max-width: 450px) {
-}
-
 @media (max-height: 650px) {
-.first-main {
-  position: relative;
-}
+  .first-main {
+    position: relative;
+  }
 
-.first-half {
-  position: absolute;
-  bottom: 50px;
-  left: 20px;
-}
+  .first-half {
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+  }
 }

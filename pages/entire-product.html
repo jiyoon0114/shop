@@ -3,20 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/index.css">
+  <script src="../js/entire-product.js" defer></script>
+  <link rel="stylesheet" href="../css/common.css">
   <link rel="stylesheet" href="../css/entire-product.css">
   <title>entire-product</title>
 </head>
 <body>
-  <div class="container">
-    <header class="nav">
+  <div class="entire-product-page">
+    <header class="nav glass-card">
+      <span class="logo company">JIYOON</span>
       <ul class="nav-ul">
           <li><a href="">sale</a></li>
           <li><a href="">clothes</a></li>
           <li><a href="">cart</a></li>
           <li><a href="">my</a></li> 
-      </ul>
-      <a href="./Login-sign/login.html" class="login-a logo">LOGIN</a>
+        </ul>
+        <a href="./login.html" class="login-a logo">LOGIN</a>
     </header>
     <main class="entire-product-main">
       <ul class="orblist-order">
@@ -24,6 +26,9 @@
         <li onclick="orbyChange_bn()">많이 구매한 상품</li>
         <li onclick="orbyChange_bn()">리뷰 많은 상품</li>
       </ul>
+      <div class="product-box glass-card">
+        <!-- index.js 참조하기 -->
+      </div>
     </main>
   </div>
 </body>
