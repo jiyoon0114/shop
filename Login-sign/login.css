@@ -3,7 +3,7 @@
   -webkit-backdrop-filter: blur(20px);
   border-radius: 20px;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .playfair-display-sc-bold {
