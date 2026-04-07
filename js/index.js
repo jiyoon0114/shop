@@ -1,3 +1,4 @@
+import { product_clothes } from './product_data.js'
 // 1. 데이터를 배열로 관리
 
 //두번째 페이지 콜렉션 부분
@@ -35,19 +36,6 @@ collection_main.forEach(function(collection){
 
 //main 마지막페이지 그리드
 
-const productPictureAdress = 'img/products/';
-
-const product_clothes = [
-  { img: `${productPictureAdress}product1.jfif`, name: "상품명1", price: "40,000원", productSold: 1},
-  { img: `${productPictureAdress}product2.jfif`, name: "상품명2", price: "50,000원", productSold: 2},
-  { img: `${productPictureAdress}product3.jfif`, name: "상품명3", price: "70,000원", productSold: 3},
-  { img: `${productPictureAdress}product4.jfif`, name: "상품명4", price: "80,000원",productSold: 4},
-  { img: `${productPictureAdress}product5.jfif`, name: "상품명5", price: "90,000원", productSold: 5},
-  { img: `${productPictureAdress}product6.jfif`, name: "상품명6", price: "100,000원", productSold: 6},
-  { img: `${productPictureAdress}product7.jpg`,  name: "상품명7", price: "110,000원", productSold: 7},
-  { img: `${productPictureAdress}product8.jfif`, name: "상품명8", price: "120,000원", productSold: 8},
-];
-
 // 2. product-box를 찾아서
 /*
   document = 현재 HTML 문서 전체
@@ -74,7 +62,7 @@ product_clothes.forEach(function(product) {
   new_product_name.classList.add('product-name');
   new_product_name.textContent = product.name;
 
-  const new_product_tag = document.createElement('span');
+  const new_product_tag = document.createElement('div');
   new_product_tag.classList.add('price-tag');
   new_product_tag.textContent = product.price;
 
