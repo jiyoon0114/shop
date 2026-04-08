@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <script type="module" src="../js/entire-product.js"></script>
+  <script type="module" src="../js/entire-product.js" defer></script>
 
   <link rel="stylesheet" href="../css/common.css">
   <link rel="stylesheet" href="../css/entire-product.css">
@@ -28,8 +28,15 @@
         <li class="playfair-display-sc-bold">Best Selling</li>
         <li class="playfair-display-sc-bold">Low to High</li>
       </ul>
-      <div class="product-box glass-card border-rad">
-        <!-- index.js 참조하기 -->
+      <div class="product-list-box glass-card border-rad">
+        <ul class="product-category">
+          <li>clothes</li>
+          <li>accesary</li>
+          <li>glasses</li>
+        </ul>
+        <div class="product-box">
+          <!-- index.js 참조하기 - product-card -->
+        </div>
       </div>
     </main>
   </div>
