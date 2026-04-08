@@ -37,7 +37,7 @@
   width: 400px;
   background: rgba(3, 3, 3, 0.315);
   box-shadow:
-    rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
@@ -45,7 +45,6 @@
   color: #e4e4e4;
   padding: 20px;
   border-radius: 100px;
-  cursor: pointer;
   }
 
 .orblist-order > li.active {
@@ -75,6 +74,8 @@
 
 .product-category{
   display: flex;
+  justify-content: left;
+  align-items: center;
   gap: 20px;
   padding: 30px 20px;
 }

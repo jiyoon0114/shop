@@ -27,8 +27,6 @@ sortedPrice.addEventListener('click', (e) => {
   orbyChange_sort(e, 'orblist-order')
 });
 
-
-
 clothesBtn.addEventListener('click', (e) => {
   category = product_clothes;
   orbyChange_sort(e, 'product-category')
