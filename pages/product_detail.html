@@ -3,32 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="product_detail.html">
-  <title>product detail</title>
+  <link rel="stylesheet" href="../css/prodcut_detail.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <script src="../js/product_detail.js" defer></script>
+  <title>상품 디테일</title>
 </head>
 <body>
-  <header>
-      <ul class="nav-ul">
-        <li><a href="">sale</a></li>
-        <li><a href="">clothes</a></li>
-        <li><a href="">cart</a></li>
-        <li><a href="">my</a></li>
-      </ul>
-  </header>
   <main>
-    <div class="slider">
-      <button class="prev">←</button>
-      <div class="viewport">
-        <div class="track">
-          <img src="../img/product1.jfif" alt="">
-          <img src="../img/product2.jfif" alt="">
-          <img src="../img/product3.jfif" alt="">
+    <header class="nav glass-card">
+      <span class="logo company"><a href="../index.html">JIYOON</a></span>
+        <ul class="nav-ul">
+            <li><a href="">sale</a></li>
+            <li><a href="../pages/entire-product.html">product</a></li>
+            <li><a href="">cart</a></li>
+            <li><a href="">my</a></li> 
+          </ul>
+          <a href="./login.html" class="login-a logo">LOGIN</a>
+    </header>
+    <div class="product">
+      <div class="product-pic-info">
+        <div class="picture-frame">
+          <img src="../img/products/glasses/product10.jpg" alt="">
+        </div>
+        <div class="product-info">
+          <span class="product-number">상품번호:id</span>
+          <span class="product-title">hi</span>
+          <span class="product-price">120,000원</span>
         </div>
       </div>
-      <button class="next">→</button>
-    </div>
-    <div class="product_info">
-      <div class="product-title"></div>
     </div>
   </main>
 </body>

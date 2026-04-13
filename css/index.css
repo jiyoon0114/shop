@@ -119,6 +119,13 @@
   gap: 6vw;
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 header > ul {
   padding-top: 20px;
   display: flex;
@@ -126,9 +133,9 @@ header > ul {
   gap: 5vw;
 }
 
-header > ul > li > a:hover {
+header > ul > li:hover {
   background-color: #94939398;
-  padding: 0 10px;
+  padding: 10 2px;
 }
 
 @media (max-width: 950px) {
